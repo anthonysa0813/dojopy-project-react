@@ -1,0 +1,13 @@
+.cardContainer {
+  width: 200px;
+  margin: auto;
+  border: 2px solid brown;
+}
+
+.cardPicture {
+  width: 100%;
+}
+
+.cardPicture img {
+  width: 100%;
+}
