@@ -1,0 +1,19 @@
+button {
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.primary {
+  background-color: rgb(68, 68, 238);
+  color: white;
+}
+
+.secondary {
+  background-color: rgb(31, 27, 27);
+}
+
+.danger {
+  background-color: rgb(245, 59, 59);
+  color: white;
+}

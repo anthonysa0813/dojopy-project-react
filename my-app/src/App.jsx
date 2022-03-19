@@ -27,12 +27,15 @@ const App = () => {
       <div className="container">
         <h2>Soy un subtitulo</h2>
       </div> */}
-
+      {/* 
       <Counter />
 
       <Cards name="Julio Iglesias" age={25} picture={fotito} />
       <Cards name="Ana Caceres" age={28} picture={fotito} />
-      <Cards name="Shakira" age={40} picture={fotito} />
+      <Cards name="Shakira" age={40} picture={fotito} /> */}
+
+      <Bottons content={"Ir a facebook"} color="primary" />
+      <Bottons content={"Ir a youtube"} color="danger" />
     </>
   );
 };
