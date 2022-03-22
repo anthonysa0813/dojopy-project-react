@@ -1,0 +1,25 @@
+.controlsContainer {
+  display: flex;
+  border-bottom: 3px solid brown;
+  padding-bottom: 1rem;
+}
+
+.wrapper {
+  width: 992px;
+  margin: 0 auto;
+}
+
+.personajeGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.cardImage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.debug {
+  border: 3px solid red;
+}
