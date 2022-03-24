@@ -42,6 +42,7 @@ const RickAndMorty = () => {
       return;
     }
     console.log("solicitando a la api.... :D");
+
     getAPiWithCaracter();
   };
 
@@ -77,7 +78,7 @@ const RickAndMorty = () => {
         <h1 className="text-center">Rick and Morty | App</h1>
         <div className="wrapper">
           <div className="personajeGrid">
-            {dataApi.map((personaje) => {
+            {dataApi?.map((personaje) => {
               return <CardCaracter personaje={personaje} />;
             })}
           </div>
