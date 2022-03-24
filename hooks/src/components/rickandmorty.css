@@ -23,3 +23,15 @@
 .debug {
   border: 3px solid red;
 }
+
+.darkMode {
+  background: #000;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.lightMode {
+  background: white;
+  color: black;
+  transition: all 0.3s ease;
+}
