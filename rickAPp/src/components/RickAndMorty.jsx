@@ -24,6 +24,13 @@ const RickAndMorty = () => {
       `https://rickandmortyapi.com/api/character?name=${value}`
     );
     const data = await response.json();
+    console.log(data);
+
+    if (data.error) {
+      console.log("uppsss");
+      setDataApi([]);
+      return;
+    }
     setDataApi(data.results); // []
   };
 
@@ -77,6 +84,7 @@ const RickAndMorty = () => {
       <main>
         <h1 className="text-center">Rick and Morty | App</h1>
         <div className="wrapper">
+          {dataApi.length === 0 && <h3>No se encontraron resultados</h3>}
           <div className="personajeGrid">
             {dataApi?.map((personaje) => {
               return <CardCaracter personaje={personaje} />;
