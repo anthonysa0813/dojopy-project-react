@@ -4,6 +4,18 @@ import Formulario from "./components/Formulario";
 
 const App = () => {
   const [users, setUsers] = useState([]);
+  const [modoEdicion, setModoEdicion] = useState(false);
+  const [user, setUser] = useState({});
+
+  const eliminar = (id) => {
+    const filterData = users.filter((item) => item.id !== id);
+    setUsers(filterData);
+  };
+
+  const editar = (user) => {
+    setModoEdicion(true);
+    setUser(user);
+  };
 
   return (
     <>
@@ -15,15 +27,32 @@ const App = () => {
                 return (
                   <li className="list-group-item">
                     {user.name}
-                    <button className="btn btn-warning mx-3">Editar</button>
-                    <button className="btn btn-danger">Eliminar</button>
+                    <button
+                      className="btn btn-warning mx-3"
+                      onClick={() => editar(user)}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => eliminar(user.id)}
+                    >
+                      Eliminar
+                    </button>
                   </li>
                 );
               })}
             </ul>
           </div>
           <div className="col">
-            <Formulario setUsers={setUsers} users={users} />
+            <Formulario
+              setUsers={setUsers}
+              users={users}
+              modoEdicion={modoEdicion}
+              setModoEdicion={setModoEdicion}
+              user={user}
+              setUser={setUser}
+            />
           </div>
         </div>
       </div>
