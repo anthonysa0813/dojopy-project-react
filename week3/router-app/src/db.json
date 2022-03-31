@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "nombre": "Ana",
+      "profesion": "Backend developer"
+    },
+    {
+      "nombre": "Moises",
+      "profesion": "diseñador UI",
+      "id": 3
+    },
+    {
+      "nombre": "Moises",
+      "profesion": "diseñador UI",
+      "id": 4
+    },
+    {
+      "nombre": "anthony",
+      "profesion": "fullstack",
+      "id": 5
+    }
+  ]
+}
